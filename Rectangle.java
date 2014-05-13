@@ -7,8 +7,8 @@ public class Rectangle extends Brick {
     serialNumber = serialNum;
     colour = colr;
 
-    for(int i = 0; i < x; i++){
-      for(int n = 0; n < y; n++){
+    for(int i = 0; i < X; i++){
+      for(int n = 0; n < Y; n++){
 	if(smoothTop)
 	  studs[i][n] = new Connector(ConnectorType.SMOOTH, this);
 	else
