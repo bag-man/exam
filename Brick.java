@@ -13,6 +13,10 @@ public abstract class Brick {
     topConnector.clipTo(bottomConnector);
     bottomConnector.clipTo(topConnector);
 
+    if(direction == Direction.WIDTH_WISE) {
+      System.out.println("Connecting width ways");
+    }
+
   }
 
   private Connector getStudPosition(Position p) {
