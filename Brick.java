@@ -12,6 +12,7 @@ public abstract class Brick {
 
   protected void clip(Position topSocket, Brick bottomBrick, Position bottomStud, Direction direction) {
 
+    //These come back as null
     Connector topConnector = this.getSocketPosition(topSocket);
     Connector bottomConnector = bottomBrick.getStudPosition(bottomStud);
 
