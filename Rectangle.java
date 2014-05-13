@@ -3,7 +3,6 @@ public class Rectangle extends Brick {
   private int x,y;
 
   public Rectangle(int X, int Y, boolean smoothTop,boolean smoothBottom, String serialNum, Colour colr){
-    super();
     serialNumber = serialNum;
     colour = colr;
 
