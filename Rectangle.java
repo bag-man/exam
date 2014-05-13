@@ -10,14 +10,14 @@ public class Rectangle extends Brick {
     for(int i = 0; i < x; i++){
       for(int n = 0; n < y; n++){
 	if(smoothTop)
-	  studs[x][y] = new Connector(ConnectorType.SMOOTH, this);
+	  studs[i][n] = new Connector(ConnectorType.SMOOTH, this);
 	else
-	  studs[x][y] = new Connector(ConnectorType.STUD, this);
+	  studs[i][n] = new Connector(ConnectorType.STUD, this);
 
 	if(smoothBottom)
-	  sockets[x][y] = new Connector(ConnectorType.SMOOTH, this);
+	  sockets[i][n] = new Connector(ConnectorType.SMOOTH, this);
 	else
-	  sockets[x][y] = new Connector(ConnectorType.SOCKET, this);
+	  sockets[i][n] = new Connector(ConnectorType.SOCKET, this);
       }
     }
 
